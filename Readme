@@ -8,18 +8,19 @@ We use data in our daily life activities even without noticing.
 For example, in our family, we can collect our favorite food our children or parents like via the usage of data analysis, which will help us with pre-informed decisions of likely food to prepare more often or during special occasions like Christmas, Ramadan, etc. This is made possible with the use of data analysis processes and statistical toolkits like mean, average, and median.  The same approach of data analysis can be employed, however in a complex format by a company or business organization to make great pre-informed decisions about their market trends, customers behavior, and how to better engage their customers as well as potential clients.
 
 For a comprehensive data analysis, we employ a variety of essential processes:
-- Collecting Data: We gather relevant data from diverse sources, including WhatsApp, Telegram, Facebook, Twitter, books, libraries, etc. Today, we’ll focus on using WhatsApp as our data source.
-- Cleaning Data: Data cleaning ensures the quality and accuracy of our dataset. By addressing inconsistencies and anomalies, we ensure that the data accurately reflects the true values being measured. Python is our tool of choice for data cleaning, given its flexibility and powerful libraries like Pandas.
+- **Collecting Data**: We gather relevant data from diverse sources, including WhatsApp, Telegram, Facebook, Twitter, books, libraries, etc. Today, we’ll focus on using WhatsApp as our data source.
+
+- **Cleaning Data**: Data cleaning ensures the quality and accuracy of our dataset. By addressing inconsistencies and anomalies, we ensure that the data accurately reflects the true values being measured. Python is our tool of choice for data cleaning, given its flexibility and powerful libraries like Pandas.
 
 Other essential processes we employ for a comprehensive data analysis which is beyond the scope of this article, however, what mentioning include:
-- Transforming Data: Preparing data for analysis (e.g., normalization, aggregation).
+- **Transforming Data**: Preparing data for analysis (e.g., normalization, aggregation).
 
--  Descriptive Analysis: Summarizing and visualizing data.
+-  **Descriptive Analysis**: Summarizing and visualizing data.
 
-- Inferential Analysis: Drawing conclusions based on sample data.
+- **Inferential Analysis**: Drawing conclusions based on sample data.
 
-- Predictive Analysis: Forecasting future trends.
-- Prescriptive Analysis: Recommending actions based on insights.
+- **Predictive Analysis**: Forecasting future trends.
+- **Prescriptive Analysis**: Recommending actions based on insights.
 
 Exporting and cleaning up data from WhatsApp can be intriguing, but it is very easy to accomplish if you follow the guidelines below. I will urge you to do the following export and clean up the data which we shall further explore in this article because I believe the best way to learn is by doing it yourself even if it means that you repeat the same concept several times, till you get it right. So, let's dive in, I hope you are as excited as I am. Are you ready?
 
@@ -49,7 +50,15 @@ Exporting and cleaning up data from WhatsApp can be intriguing, but it is very e
 
 - Select the mode you would want WhatsApp to share your exported chat file, e.g. via an Email or through Drive.
 
-- So, once you are done, your file will have looked something similar to mine, WhatsApp Chat. You can download the chat corpus if you were not able to follow the steps above, for our data cleaning with Python, which we shall talk about later.
+- So, once you are done, your file will have looked something similar to mine, [WhatsApp Chat](https://drive.google.com/file/d/1qaBGtVF18zyRt5bKH3KQe4J1zm_ZWF4V/view?usp=drivesdk). You can download the chat corpus if you were not able to follow the steps above, for our data cleaning with Python, which we shall talk about later.
 
-- Kindly make sure that you have Python installed on your computer, and any IDE of your choice will just work fine, if you don't have Python installed on your computer, download it https://www.python.org/downloads/release/python-3121/here, and for the IDE, I use Visual Studio Code (VsCode), so please download it here as well. Follow all the installation processes as required for you to get everything right based on how we shall manipulate and clean our data later on. Once you are done with the installation, head over to the VSCode to create a project folder or file for the work through which we shall name cleaned_corpus.py. If you are a bit confused about how to get started with VsCode in Python as a beginner, then check out this tutorial, here.
+- Kindly make sure that you have Python installed on your computer, and any IDE of your choice will just work fine, if you don't have Python installed on your computer, download it [here](https://www.python.org/downloads/release/python-3121), and for the IDE, I use Visual Studio Code (VsCode), so please download it [here](https://code.visualstudio.com/download) as well. Follow all the installation processes as required for you to get everything right based on how we shall manipulate and clean our data later on. Once you are done with the installation, head over to the VSCode to create a project folder or file for the work through which we shall name cleaned_corpus.py. If you are a bit confused about how to get started with VsCode in Python as a beginner, then check out this tutorial, here.
 
+
+
+Your data which you had printed on command line via using print statement will look like [this](images/cleaned_corpus.png) when you are done. 
+
+
+Kindly share my work, and follow me on [Linkedin](https://www.linkedin.com/in/ejikeme-blaise-2504111b1/), Twitter
+and [GitHub](https://github.com/Blaise-93) for more educative content.
+You can text me as well via my __ejikemeblaise.com__

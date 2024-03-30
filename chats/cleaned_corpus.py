@@ -86,7 +86,11 @@ def remove_any_remaining_unwanted_text(text):
     # add any unwanted phrase here in the list as a string from your printed tuple on your cmd,
     #  mine might definitely be different from yours, only if you are using the same chats.txt
     # files as mine.
-    unwanted_phrases = ['pharm chinyere _ nett pharmacy','pm', ":", '\u200d♂', "px king cj"]
+    unwanted_phrases = [
+            'pharm chinyere _ nett pharmacy','pm', "am", ":", '\u200d♂',
+            "px king cj",
+
+        ]
 
     # Remove dates
     text = re.sub(date_pattern, '', text)
@@ -124,5 +128,9 @@ def our_corpus_cleaned_data():
     will see it in action."""
     for chats in list(cleaned_messages):
         print(chats)
+    
+
 #our_corpus_cleaned_data()
 
+# NB: You can import cleaned_messages our_corpus_cleaned_data() in any of your python
+# scripts and use it for your further data cleaning.
