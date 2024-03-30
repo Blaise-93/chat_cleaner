@@ -1,0 +1,55 @@
+# __Data Cleaning Made Easy__:
+
+# __Introduction__
+
+According to Wikipedia "Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making."  Data analysis is a great concept that we implement in machine learning and artificial intelligence. In machine learning procedural training of our model, we cannot achieve that without data, measurable factual information - this data can be exported to our program to help us with what we want to analyze, or the machine tool we want to build for example a chatbot.
+We use data in our daily life activities even without noticing. 
+
+For example, in our family, we can collect our favorite food our children or parents like via the usage of data analysis, which will help us with pre-informed decisions of likely food to prepare more often or during special occasions like Christmas, Ramadan, etc. This is made possible with the use of data analysis processes and statistical toolkits like mean, average, and median.  The same approach of data analysis can be employed, however in a complex format by a company or business organization to make great pre-informed decisions about their market trends, customers behavior, and how to better engage their customers as well as potential clients.
+
+For a comprehensive data analysis, we employ a variety of essential processes:
+- Collecting Data: We gather relevant data from diverse sources, including WhatsApp, Telegram, Facebook, Twitter, books, libraries, etc. Today, we’ll focus on using WhatsApp as our data source.
+- Cleaning Data: Data cleaning ensures the quality and accuracy of our dataset. By addressing inconsistencies and anomalies, we ensure that the data accurately reflects the true values being measured. Python is our tool of choice for data cleaning, given its flexibility and powerful libraries like Pandas.
+
+Other essential processes we employ for a comprehensive data analysis which is beyond the scope of this article, however, what mentioning include:
+- Transforming Data: Preparing data for analysis (e.g., normalization, aggregation).
+
+-  Descriptive Analysis: Summarizing and visualizing data.
+
+- Inferential Analysis: Drawing conclusions based on sample data.
+
+- Predictive Analysis: Forecasting future trends.
+- Prescriptive Analysis: Recommending actions based on insights.
+
+Exporting and cleaning up data from WhatsApp can be intriguing, but it is very easy to accomplish if you follow the guidelines below. I will urge you to do the following export and clean up the data which we shall further explore in this article because I believe the best way to learn is by doing it yourself even if it means that you repeat the same concept several times, till you get it right. So, let's dive in, I hope you are as excited as I am. Are you ready?
+
+1. Open your WhatsApp app, and select any of your friends, relatives, or a group you want by clicking on the person's chat menu as you normally do if you want to chat with someone on WhatsApp.
+
+2. At the top right corner of the person's chat, you will see three-dotted (⁝) icons, click on it. A drop-down menu will appear, select More, and you will see Export chat. Click on the Export chat, and kindly select Without media in case it pops up. Kindly wait for the initialization process to finish.
+
+3. Select the mode you would want WhatsApp to share your exported chat file, e.g. via an Email or through Drive.
+
+4. So, once you are done, your file will have looked something similar to mine, as you can see in the link provided.  
+
+
+## __Why You need this Project__:
+- If you are analyzing data and seriously want to clean it up quickly for your further data processing.
+- No installation of any dependency to get you started except your Python.
+- Ready to use to clean all heavy datasets for complex analysis.
+- If you are training datasets for your machine learning, and or artificial intelligent, it will surely help you get your data cleaned ASAP.
+- You can easily import it to your existing project,
+and make use of the module.
+
+## __Getting Started__:
+
+Exporting and cleaning up data from WhatsApp can be intriguing, but it is very easy to accomplish if you follow the guidelines below. I will urge you to do the following export and clean up the data which we shall further explore in this article because I believe the best way to learn is by doing it yourself even if it means that you repeat the same concept several times, till you get it right. So, let's dive in, I hope you are as excited as I am. Are you ready?
+- Open your WhatsApp app, and select any of your friends, relatives, or a group you want by clicking on the person's chat menu as you normally do if you want to chat with someone on WhatsApp.
+
+-  At the top right corner of the person's chat, you will see three-dotted (⁝) icons, click on it. A drop-down menu will appear, select More, and you will see Export chat. Click on the Export chat, and kindly select Without media in case it pops up. Kindly wait for the initialization process to finish.
+
+- Select the mode you would want WhatsApp to share your exported chat file, e.g. via an Email or through Drive.
+
+- So, once you are done, your file will have looked something similar to mine, WhatsApp Chat. You can download the chat corpus if you were not able to follow the steps above, for our data cleaning with Python, which we shall talk about later.
+
+- Kindly make sure that you have Python installed on your computer, and any IDE of your choice will just work fine, if you don't have Python installed on your computer, download it https://www.python.org/downloads/release/python-3121/here, and for the IDE, I use Visual Studio Code (VsCode), so please download it here as well. Follow all the installation processes as required for you to get everything right based on how we shall manipulate and clean our data later on. Once you are done with the installation, head over to the VSCode to create a project folder or file for the work through which we shall name cleaned_corpus.py. If you are a bit confused about how to get started with VsCode in Python as a beginner, then check out this tutorial, here.
+
