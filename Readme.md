@@ -35,7 +35,7 @@ Developers, kindly listen up! 🚀 If you're knee-deep in data analysis and crav
 3. **Machine Learning Magic**: If you're training models for ML or AI, consider this your secret weapon. It'll whip your data into shape faster than you can say "gradient descent."
 
 4. **Plug-and-Play**: Import it seamlessly into your existing project. No arcane rituals required—just pure, unadulterated data-cleaning goodness.
-5. **Unit Test Cases**: Concerned about function assertions? No need to worry! The majority of our functions have undergone thorough testing using the Unittest library. So, feel assured—your use cases are accounted for.
+5. **Unit Test Cases**: Concerned about function assertions? No need to worry! The majority of our functions have undergone thorough testing using the Unittest library. So, feel assured—your use cases are accounted for. You can check them [here](chats/test_cleaned_corpus.py).
 
 So, fellow developer, grab this module, wield it like a digital broom, and sweep away those data cobwebs! 🧹💻
 
