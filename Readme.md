@@ -7,6 +7,7 @@ We use data in our daily life activities even without noticing.
 
 For example, in our family, we can collect our favorite food our children or parents like via the usage of data analysis, which will help us with pre-informed decisions of likely food to prepare more often or during special occasions like Christmas, Ramadan, etc. This is made possible with the use of data analysis processes and statistical toolkits like mean, average, and median.  The same approach of data analysis can be employed, however in a complex format by a company or business organization to make great pre-informed decisions about their market trends, customers behavior, and how to better engage their customers as well as potential clients.
 
+## Data Analysis Processes:
 For a comprehensive data analysis, we employ a variety of essential processes:
 - **Collecting Data**: We gather relevant data from diverse sources, including WhatsApp, Telegram, Facebook, Twitter, books, libraries, etc. Today, we’ll focus on using WhatsApp as our data source.
 
@@ -20,8 +21,25 @@ Other essential processes we employ for a comprehensive data analysis which is b
 - **Inferential Analysis**: Drawing conclusions based on sample data.
 
 - **Predictive Analysis**: Forecasting future trends.
+
 - **Prescriptive Analysis**: Recommending actions based on insights.
 
+## __Why You Need This Project:__
+
+Developers, kindly listen up! 🚀 If you're knee-deep in data analysis and crave a swift solution for tidying up your messy datasets, this project is your knight in shining code. Here's why it's a must-have:
+
+1. **Effortless Setup**: Forget about wrestling with dependencies. With this project, all you need is your trusty Python installation. No fuss, no muss!
+
+2. **Data Cleaning on Steroids**: Got hefty datasets that resemble a tangled spaghetti bowl? Fear not! Our module is battle-tested and ready to tackle even the gnarliest data messes. Cleanliness is next to data-godliness, after all.
+
+3. **Machine Learning Magic**: If you're training models for ML or AI, consider this your secret weapon. It'll whip your data into shape faster than you can say "gradient descent."
+
+4. **Plug-and-Play**: Import it seamlessly into your existing project. No arcane rituals required—just pure, unadulterated data-cleaning goodness.
+
+So, fellow developer, grab this module, wield it like a digital broom, and sweep away those data cobwebs! 🧹💻
+
+
+## Project SetUp : For those that would like to use their WhatsApp Chats 
 Exporting and cleaning up data from WhatsApp can be intriguing, but it is very easy to accomplish if you follow the guidelines below. I will urge you to do the following export and clean up the data which we shall further explore in this article because I believe the best way to learn is by doing it yourself even if it means that you repeat the same concept several times, till you get it right. So, let's dive in, I hope you are as excited as I am. Are you ready?
 
 1. Open your WhatsApp app, and select any of your friends, relatives, or a group you want by clicking on the person's chat menu as you normally do if you want to chat with someone on WhatsApp.
@@ -32,14 +50,6 @@ Exporting and cleaning up data from WhatsApp can be intriguing, but it is very e
 
 4. So, once you are done, your file will have looked something similar to mine, as you can see in the link provided.  
 
-
-## __Why You need this Project__:
-- If you are analyzing data and seriously want to clean it up quickly for your further data processing.
-- No installation of any dependency to get you started except your Python.
-- Ready to use to clean all heavy datasets for complex analysis.
-- If you are training datasets for your machine learning, and or artificial intelligent, it will surely help you get your data cleaned ASAP.
-- You can easily import it to your existing project,
-and make use of the module.
 
 ## __Getting Started__:
 
@@ -88,7 +98,36 @@ For example:
     ```
 
 And that's it! You've successfully cloned the Git repository to your local machine. Now you can work on the project, make changes, 
-and push them back to the remote repository on GitHub. 🚀
+and push them back to the remote repository on GitHub. Don't forget you can still download the Zip of the clone, extract and import it in your existing project as another option. 🚀
+
+
+Certainly! Your paragraph provides clear instructions on how to use the settings in a Python project. However, to make it more engaging and appealing to developers, consider the following tweaks:
+
+---
+
+## **Fine-Tuning Your Settings: A Dev's Guide**
+
+In your `settings.py` file of this project, you hold the keys to customization. Let's dive into how you can wield this power:
+
+1. **The `UNWANTED_WORDS_OR_PHRASES` Constant:**
+   - This gem allows you to filter out undesirables from your dataset.
+
+   - Add any pesky words or phrases to the list. For instance, if you're tired of seeing those pesky full stops (.), just toss them in there.
+
+   - Here's the magic incantation:
+     ```python
+     UNWANTED_WORDS_OR_PHRASES = [
+         'pm', "am", ":", '\u200d♂', "px king cj",
+         # Remove this line if you're not using my exported chat
+         # Feel free to add more phrases, if any. :)
+     ]
+     ```
+   - Now your data will be cleaner than a freshly linted codebase!
+
+2. **Bonus Tip: Exported Chat Cleanup:**
+   - If you're not using my exported chat, consider removing the mysterious `"px king cj"` line. It's like debugging a cryptic error message—sometimes you just need to let go.
+
+Remember, settings are like code comments: they're often overlooked but can save you from a world of chaos. Happy tweaking! 🚀
 
 
 ## How your data will look like on CMD prompt

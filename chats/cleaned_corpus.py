@@ -1,5 +1,5 @@
 import re
-
+from settings import UNWANTED_WORDS_OR_PHRASES
 
 def remove_conversational_chat_metadata(chat_export_file):
     """ a function that removes imported unused data like date_time, dash_whitespace,
@@ -54,6 +54,24 @@ input_sentences = ["I love Blaise", "Blaise love Python", "Blaise has been writi
 formatted_result = format_each_corpus_conversational_sentence(input_sentences)
 #print(formatted_result)
 
+
+def include_emoji(messages):
+     
+    cleaned_messages = []
+    for message in messages:
+
+        # Remove dates, media omitted, times, names, hyphens, and emojis
+        cleaned = re.sub(r'<Media omitted>|\d{1,2}/\d{1,2}/\d{2,4}, \d{1,2}:\d{2}\u202f[APM]{2} - \w+: ', '', message)
+        
+        # comment the below line of code if you want to make use of emojis of all types
+        # once it is commented with "#" it will definitely allow emojis visibility.
+        #ALLOW_EMOJI
+       
+        cleaned = re.sub(r'-', '', cleaned)
+        
+        cleaned_messages.append(cleaned)
+#ALLOW_EMOJI = include_emoji()
+
 def clean_messages(messages):
     """ helps us remove emojis, media omitted times, names and times which 
         is attached when the log chats is generated from clean_corpus via 
@@ -70,9 +88,10 @@ def clean_messages(messages):
         
         # comment the below line of code if you want to make use of emojis of all types
         # once it is commented with "#" it will definitely allow emojis visibility.
-        cleaned = re.sub(r'[\U00010000-\U0010ffff]', '', cleaned)
-
+        #ALLOW_EMOJI
+       
         cleaned = re.sub(r'-', '', cleaned)
+        cleaned = re.sub(r'[\U00010000-\U0010ffff]', '', cleaned)
         cleaned_messages.append(cleaned)
     return tuple(cleaned_messages)
 
@@ -86,17 +105,12 @@ def remove_any_remaining_unwanted_text(text):
     # add any unwanted phrase here in the list as a string from your printed tuple on your cmd,
     #  mine might definitely be different from yours, only if you are using the same chats.txt
     # files as mine.
-    unwanted_phrases = [
-            'pharm chinyere _ nett pharmacy','pm', "am", ":", '\u200d♂',
-            "px king cj",
-
-        ]
-
+   
     # Remove dates
     text = re.sub(date_pattern, '', text)
 
     # Remove unwanted phrases
-    for phrase in unwanted_phrases:
+    for phrase in UNWANTED_WORDS_OR_PHRASES:
         text = text.replace(phrase, '')
 
     # Remove extra spaces
@@ -105,14 +119,13 @@ def remove_any_remaining_unwanted_text(text):
     return text
 
 
-
 def remove_full_stops(messages):
     cleaned_messages = tuple([re.sub(r'\.', '', msg) for msg in messages])
     return cleaned_messages
 
 
 # Clean the messages and print the result
-CORPUS_FILE = 'chats/chats.txt'
+CORPUS_FILE = 'chats/chats.txt' # change this text file path
 cleaned_tuple = format_each_corpus_conversational_sentence(
                             clean_messages((
                                (clean_corpus(CORPUS_FILE))))
