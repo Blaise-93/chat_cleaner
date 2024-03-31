@@ -16,10 +16,12 @@ def remove_conversational_chat_metadata(chat_export_file):
         with open(chat_export_file, "r", encoding="utf-8") as corpus_file:
             content = corpus_file.read()
         cleaned_corpus = re.sub(pattern, "", content)
+        
         return tuple(cleaned_corpus.split("\n"))
     
     except UnicodeDecodeError:
         print(f"Error reading file {chat_export_file}.")
+
 
 def clean_corpus(chat_export_file):
     """ clean corpus to bearest minimum  """
@@ -54,23 +56,6 @@ input_sentences = ["I love Blaise", "Blaise love Python", "Blaise has been writi
 formatted_result = format_each_corpus_conversational_sentence(input_sentences)
 #print(formatted_result)
 
-
-def include_emoji(messages):
-     
-    cleaned_messages = []
-    for message in messages:
-
-        # Remove dates, media omitted, times, names, hyphens, and emojis
-        cleaned = re.sub(r'<Media omitted>|\d{1,2}/\d{1,2}/\d{2,4}, \d{1,2}:\d{2}\u202f[APM]{2} - \w+: ', '', message)
-        
-        # comment the below line of code if you want to make use of emojis of all types
-        # once it is commented with "#" it will definitely allow emojis visibility.
-        #ALLOW_EMOJI
-       
-        cleaned = re.sub(r'-', '', cleaned)
-        
-        cleaned_messages.append(cleaned)
-#ALLOW_EMOJI = include_emoji()
 
 def clean_messages(messages):
     """ helps us remove emojis, media omitted times, names and times which 
@@ -118,11 +103,7 @@ def remove_any_remaining_unwanted_text(text):
 
     return text
 
-
-def remove_full_stops(messages):
-    cleaned_messages = tuple([re.sub(r'\.', '', msg) for msg in messages])
-    return cleaned_messages
-
+print(remove_any_remaining_unwanted_text("Blaise is here"))
 
 # Clean the messages and print the result
 CORPUS_FILE = 'chats/chats.txt' # change this text file path
@@ -133,7 +114,7 @@ cleaned_tuple = format_each_corpus_conversational_sentence(
 
 # Remove unwanted text from each element of the tuple
 cleaned_messages = tuple(remove_any_remaining_unwanted_text(text) for text in cleaned_tuple)
-print(cleaned_messages)
+# print(cleaned_messages)
 
 def our_corpus_cleaned_data():
     """ this function returns strings of the chat corpus of the `cleaned_messages` when 

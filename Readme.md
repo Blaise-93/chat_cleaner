@@ -35,6 +35,7 @@ Developers, kindly listen up! 🚀 If you're knee-deep in data analysis and crav
 3. **Machine Learning Magic**: If you're training models for ML or AI, consider this your secret weapon. It'll whip your data into shape faster than you can say "gradient descent."
 
 4. **Plug-and-Play**: Import it seamlessly into your existing project. No arcane rituals required—just pure, unadulterated data-cleaning goodness.
+5. **Unit Test Cases**: Concerned about function assertions? No need to worry! The majority of our functions have undergone thorough testing using the Unittest library. So, feel assured—your use cases are accounted for.
 
 So, fellow developer, grab this module, wield it like a digital broom, and sweep away those data cobwebs! 🧹💻
 
@@ -127,7 +128,38 @@ In your `settings.py` file of this project, you hold the keys to customization. 
 2. **Bonus Tip: Exported Chat Cleanup:**
    - If you're not using my exported chat, consider removing the mysterious `"px king cj"` line. It's like debugging a cryptic error message—sometimes you just need to let go.
 
+Don't forget that you can actually allow your emojis to show up in your further data processing via commenting 
+this line of code (`cleaned = re.sub(r'[\U00010000-\U0010ffff]', '', cleaned)`) as shown below code snippets.
+
+```py
+def clean_messages(messages):
+    """ helps us remove emojis, media omitted times, names and times which 
+        is attached when the log chats is generated from clean_corpus via 
+        usage of regex methods.
+
+        ::  returns a tuple.
+     """
+    
+    cleaned_messages = []
+    for message in messages:
+
+        # Remove dates, media omitted, times, names, hyphens, and emojis
+        cleaned = re.sub(r'<Media omitted>|\d{1,2}/\d{1,2}/\d{2,4}, \d{1,2}:\d{2}\u202f[APM]{2} - \w+: ', '', message)
+        
+        # comment the below line of code if you want to make use of emojis of all types
+        # once it is commented with "#" it will definitely allow emojis visibility.
+        #ALLOW_EMOJI
+       
+        cleaned = re.sub(r'-', '', cleaned)
+        cleaned = re.sub(r'[\U00010000-\U0010ffff]', '', cleaned)
+        cleaned_messages.append(cleaned)
+    return tuple(cleaned_messages)
+
+
+```
+
 Remember, settings are like code comments: they're often overlooked but can save you from a world of chaos. Happy tweaking! 🚀
+
 
 
 ## How your data will look like on CMD prompt
