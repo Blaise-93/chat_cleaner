@@ -87,18 +87,8 @@ For example:
     Unpacking objects: 100% (10/10), done.
     ```
 
-And that's it! You've successfully cloned the Git repository to your local machine. Now you can work on the project, make changes, and push them back to the remote repository on GitHub. 🚀
-
-Remember to replace `YOUR-USERNAME` and `YOUR-REPOSITORY` with the actual GitHub username and repository name you want to clone. Happy coding! 😊
-
-For more information, you can refer to the [official GitHub documentation on cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).¹
-
-Source: Conversation with Bing, 3/31/2024
-(1) Cloning a repository - GitHub Docs. https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository.
-(2) How to clone a git repository using the command line - Educative. https://www.educative.io/answers/how-to-clone-a-git-repository-using-the-command-line.
-(3) How do I clone a specific Git branch? - Stack Overflow. https://stackoverflow.com/questions/1911109/how-do-i-clone-a-specific-git-branch.
-(4) How do I clone a Git repository into a specific folder?. https://stackoverflow.com/questions/651038/how-do-i-clone-a-git-repository-into-a-specific-folder.
-(5) undefined. https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.
+And that's it! You've successfully cloned the Git repository to your local machine. Now you can work on the project, make changes, 
+and push them back to the remote repository on GitHub. 🚀
 
 
 ## How your data will look like on CMD prompt
