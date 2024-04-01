@@ -9,15 +9,15 @@ def remove_conversational_chat_metadata(chat_export_file):
     dash_whitespace = r"\s-\s"  # " - "
     corpus_username = r"([\w\s]+)"  # e.g. "Eches"
     metadata = r":\s"  # ": "
-    #pattern = r'^[a-zA-Z\s]+$'
+  
     pattern = date_time + dash_whitespace + corpus_username + metadata
 
     try:
         with open(chat_export_file, "r", encoding="utf-8") as corpus_file:
             content = corpus_file.read()
-        cleaned_corpus = re.sub(pattern, "", content)
+        clean_corpus = re.sub(pattern, "", content)
         
-        return tuple(cleaned_corpus.split("\n"))
+        return tuple(clean_corpus.split("\n"))
     
     except UnicodeDecodeError:
         print(f"Error reading file {chat_export_file}.")
@@ -114,7 +114,7 @@ cleaned_tuple = format_each_corpus_conversational_sentence(
 
 # Remove unwanted text from each element of the tuple
 cleaned_messages = tuple(remove_any_remaining_unwanted_text(text) for text in cleaned_tuple)
-# print(cleaned_messages)
+print(cleaned_messages)
 
 def our_corpus_cleaned_data():
     """ this function returns strings of the chat corpus of the `cleaned_messages` when 
@@ -124,7 +124,7 @@ def our_corpus_cleaned_data():
         print(chats)
     
 
-#our_corpus_cleaned_data()
+#our_corpus_cleaned_data() #uncomment to view it run in for-loop
 
 # NB: You can import cleaned_messages our_corpus_cleaned_data() in any of your python
 # scripts and use it for your further data cleaning.

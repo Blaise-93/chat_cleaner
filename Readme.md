@@ -166,10 +166,10 @@ Remember, settings are like code comments: they're often overlooked but can save
 Your data which you had printed on command line via using print statement will look like [this](images/cleaned_corpus.png) when you are done. 
 
 ## Acknowledgment:
-- Special shout out to Python Developers' Community
 - [Wikipedia](https://en.wikipedia.org/wiki/Data_analysis)
 - [Data analysis | Definition, Research, & Methodology | Britannica](https://www.britannica.com/science/data-analysis)
-- [Real Python Community](https://realpython.com)
+- [Real Python Community](https://realpython.com/build-a-chatbot-python-chatterbot/)
+- Special shout out to Python Developers' Community
 
 
 ## For Contribution:

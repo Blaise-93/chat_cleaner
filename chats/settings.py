@@ -8,6 +8,7 @@
 
 UNWANTED_WORDS_OR_PHRASES =  [
             'pm', "am", ":", '\u200d♂',
-            "px king cj", "sss"  # remove this line if you are not using my exported chat
+            "px king cj", # remove this line if you are not using my exported chat
+        
         # more phrases from you if any. :)
         ]
