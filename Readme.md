@@ -101,10 +101,6 @@ And that's it! You've successfully cloned the Git repository to your local machi
 and push them back to the remote repository on GitHub. Don't forget you can still download the Zip of the clone, extract and import it in your existing project as another option. 🚀
 
 
-Certainly! Your paragraph provides clear instructions on how to use the settings in a Python project. However, to make it more engaging and appealing to developers, consider the following tweaks:
-
----
-
 ## **Fine-Tuning Your Settings: A Dev's Guide**
 
 In your `settings.py` file of this project, you hold the keys to customization. Let's dive into how you can wield this power:
