@@ -3,9 +3,8 @@
 # __Introduction__
 
 According to Wikipedia "Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making."  Data analysis is a great concept that we implement in machine learning and artificial intelligence. In machine learning procedural training of our model, we cannot achieve that without data, measurable factual information - this data can be exported to our program to help us with what we want to analyze, or the machine tool we want to build for example a chatbot.
-We use data in our daily life activities even without noticing. 
 
-For example, in our family, we can collect our favorite food our children or parents like via the usage of data analysis, which will help us with pre-informed decisions of likely food to prepare more often or during special occasions like Christmas, Ramadan, etc. This is made possible with the use of data analysis processes and statistical toolkits like mean, average, and median.  The same approach of data analysis can be employed, however in a complex format by a company or business organization to make great pre-informed decisions about their market trends, customers behavior, and how to better engage their customers as well as potential clients.
+We use data in our daily life activities even without noticing. For example, in our family, we can collect our favorite food our children or parents like via the usage of data analysis, which will help us with pre-informed decisions of likely food to prepare more often or during special occasions like Christmas, Ramadan, etc. This is made possible with the use of data analysis processes and statistical toolkits like mean, average, and median.  The same approach of data analysis can be employed, however in a complex format by a company or business organization to make great pre-informed decisions about their market trends, customers behavior, and how to better engage their customers as well as potential clients.
 
 ## Data Analysis Processes:
 For a comprehensive data analysis, we employ a variety of essential processes:
