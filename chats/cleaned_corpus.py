@@ -33,6 +33,10 @@ def ends_with_period_or_question_or_excl(sentence):
     return sentence.endswith('.') or sentence.endswith('?') \
         or sentence.endswith("!")
 
+def remove_full_stops(messages):
+    cleaned_messages = tuple([re.sub(r'\.', '', msg) for msg in messages])
+    return cleaned_messages
+
 
 def format_each_corpus_conversational_sentence(sentence):
     """
@@ -50,11 +54,6 @@ def format_each_corpus_conversational_sentence(sentence):
             formatted_sentence += "."
         sentences.append(formatted_sentence)
     return tuple(sentences)
-
-# Example usage
-input_sentences = ["I love Blaise", "Blaise love Python", "Blaise has been writing Python code since 2019"]
-formatted_result = format_each_corpus_conversational_sentence(input_sentences)
-#print(formatted_result)
 
 
 def clean_messages(messages):
@@ -103,8 +102,6 @@ def remove_any_remaining_unwanted_text(text):
 
     return text
 
-print(remove_any_remaining_unwanted_text("Blaise is here"))
-
 # Clean the messages and print the result
 CORPUS_FILE = 'chats/chats.txt' # change this text file path
 cleaned_tuple = format_each_corpus_conversational_sentence(
@@ -114,7 +111,6 @@ cleaned_tuple = format_each_corpus_conversational_sentence(
 
 # Remove unwanted text from each element of the tuple
 cleaned_messages = tuple(remove_any_remaining_unwanted_text(text) for text in cleaned_tuple)
-print(cleaned_messages)
 
 def our_corpus_cleaned_data():
     """ this function returns strings of the chat corpus of the `cleaned_messages` when 
@@ -126,5 +122,5 @@ def our_corpus_cleaned_data():
 
 #our_corpus_cleaned_data() #uncomment to view it run in for-loop
 
-# NB: You can import cleaned_messages our_corpus_cleaned_data() in any of your python
+# NB: You can import cleaned_messages or our_corpus_cleaned_data() in any of your python
 # scripts and use it for your further data cleaning.
